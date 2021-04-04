@@ -19,7 +19,7 @@ class CollectionCharactersViewController: UIViewController, UICollectionViewDele
     var collectionView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 10, right: 16)
-        layout.itemSize = CGSize(width: 150, height: 250)
+        layout.itemSize = CGSize(width: UIViewController().view.bounds.width/2 - 30, height: UIViewController().view.bounds.width/2 + 50)
         var collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         
         collectionView.register(CharacterCollectionViewCell.self, forCellWithReuseIdentifier: "CharacterCollectionViewCell")

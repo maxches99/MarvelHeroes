@@ -47,7 +47,8 @@ class CharacterCollectionViewCell: UICollectionViewCell {
         )
         innerView.left(2).right(2).top(2).bottom(2)
         backgroundColor = .black
-        thumb.size(146).fillHorizontally().top(0)
+        thumb.fillHorizontally().top(0)
+        thumb.Width == thumb.Height
         name.left(0).right(0).Top == thumb.Bottom + 8
         decription.left(0).right(0).bottom(0).Top == name.Bottom + 8
     }
