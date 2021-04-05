@@ -40,9 +40,9 @@ public class MarvelAPIClient {
                     if let dataContainer = marvelResponse.data {
                         completion(.success(dataContainer))
                     } else if let message = marvelResponse.message {
-                        completion(.failure(MarvelError.server(message: message)))
+                        completion(.failure(MarvelError.unknown))
                     } else {
-                        completion(.failure(MarvelError.decoding))
+                        completion(.failure(MarvelError.decodingError))
                     }
                 } catch {
                     completion(.failure(error))

@@ -44,6 +44,7 @@
 		3E71EEF02619F65F00335310 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E71EEEF2619F65F00335310 /* InstructionViewController.swift */; };
 		3E71EEF3261A067100335310 /* InstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E71EEF2261A067100335310 /* InstructionViewModel.swift */; };
 		3E71EEF6261A067A00335310 /* InstructionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E71EEF5261A067A00335310 /* InstructionCoordinator.swift */; };
+		3E71EEFB261B81F900335310 /* MarvelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E71EEFA261B81F900335310 /* MarvelError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		3E71EEEF2619F65F00335310 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		3E71EEF2261A067100335310 /* InstructionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewModel.swift; sourceTree = "<group>"; };
 		3E71EEF5261A067A00335310 /* InstructionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionCoordinator.swift; sourceTree = "<group>"; };
+		3E71EEFA261B81F900335310 /* MarvelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		3E71EE3C261897B500335310 /* MarvelHeroes */ = {
 			isa = PBXGroup;
 			children = (
+				3E71EEF9261B81E200335310 /* APIErrors */,
 				3E71EEDA2619A6B700335310 /* Configurators */,
 				3E71EED52619A1A800335310 /* Extensions */,
 				3E71EE9C2618C84100335310 /* Utilities */,
@@ -242,6 +245,14 @@
 			path = Instruction;
 			sourceTree = "<group>";
 		};
+		3E71EEF9261B81E200335310 /* APIErrors */ = {
+			isa = PBXGroup;
+			children = (
+				3E71EEFA261B81F900335310 /* MarvelError.swift */,
+			);
+			path = APIErrors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,6 +355,7 @@
 				3E71EEA52618C8FE00335310 /* HTTPParameter.swift in Sources */,
 				3E71EEE62619B86900335310 /* DetailsOfChatacterViewModel.swift in Sources */,
 				3E71EEA92618CB1500335310 /* APIRequest.swift in Sources */,
+				3E71EEFB261B81F900335310 /* MarvelError.swift in Sources */,
 				3E71EEB22618CB4400335310 /* DataContainer.swift in Sources */,
 				3E71EEE92619B87500335310 /* DetailsOfChatacterCoordinator.swift in Sources */,
 				3E71EE40261897B500335310 /* SceneDelegate.swift in Sources */,

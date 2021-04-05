@@ -23,7 +23,7 @@ public struct Image: Decodable {
         let path = try container.decode(String.self, forKey: .path)
         let fileExtension = try container.decode(String.self, forKey: .fileExtension)
 
-        guard let url = URL(string: "\(path).\(fileExtension)") else { throw MarvelError.decoding }
+        guard let url = URL(string: "\(path).\(fileExtension)") else { throw MarvelError.decodingError }
 
         self.url = url
     }
