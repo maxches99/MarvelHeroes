@@ -94,7 +94,7 @@ class InstructionViewController: UIViewController {
         hStack3.addArrangedSubview(imgFirst3)
         hStack3.addArrangedSubview(lbl3)
         
-        btn.bottom(16).height(60).width(200).centerHorizontally()
+        btn.bottom(16).height(60).left(16).right(16).centerHorizontally()
         
         
         self.view = view
